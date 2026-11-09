@@ -64,23 +64,4 @@ Hasil yang diharapkan: 13 test berhasil. Laporan JaCoCo tersedia pada `java-mave
 
 `unittest` adalah framework bawaan Python, sedangkan JUnit 5 adalah framework pengujian Java yang dikelola sebagai dependency Maven. coverage.py mengukur statement dan branch Python melalui command line; JaCoCo diintegrasikan ke lifecycle Maven dan menginstrumentasi bytecode Java.
 
-## Upload ke GitHub
-
-1. Buat repository kosong di GitHub.
-2. Buka folder root ini di VS Code.
-3. Jalankan pengujian Python dan Maven terlebih dahulu.
-4. Pada Source Control VS Code, stage semua file, tulis commit message, lalu commit.
-5. Pilih **Publish Branch**, login ke GitHub, dan pilih repository tujuan.
-
-Alternatif melalui Git:
-
-```powershell
-git init
-git add .
-git commit -m "Add Python and Java shipping calculator unit tests"
-git branch -M main
-git remote add origin https://github.com/USERNAME/NAMA-REPOSITORY.git
-git push -u origin main
-```
-
-Kedua implementasi dapat diuji terpisah dengan berpindah ke folder masing-masing, tetapi tetap berada dalam satu repository.
+Kedua implementasi ini dapat diuji terpisah dengan berpindah ke folder masing-masing, tetapi tetap berada dalam satu repository.
